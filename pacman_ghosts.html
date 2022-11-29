@@ -16,8 +16,18 @@
       border-radius: 50% 50% 0 0;
       position: relative;
       top: 0;
-      left: 0;
-      animation: animate1 5s forwards 2s ease-in-out;
+      left: -500px;
+      animation: blinky 5s forwards 2s ease-in-out;
+    }
+    .pinky{
+      background-color: pink;
+      width: 200px;
+      height: 200px;
+      border-radius: 50% 50% 0 0;
+      position: relative;
+      top: -500px;
+      left: 500px;
+      animation: pinky 5s forwards 2s ease;
     }
     
     .eyes {
@@ -43,7 +53,7 @@
       width: 20px;
     }
 
-    .tail-container {
+    /* .tail-container {
       display: flex;
     }
 
@@ -53,38 +63,58 @@
       width: 25px;
       align-items: flex-end;
       justify-content: space-between;
-    }
+    } */
 
-    @keyframes animate1 {
+    @keyframes blinky {
       25% {
         top: 0;
         left: 500px;
-        background-color: red;
+        
         
       }
       50% {
         top: 500px;
         left: 500px;
-        background-color: red;
+        
         
       }
       75% {
         top: 500px;
         left: 1000px;
-        background-color: red;
+        
         
       }
       100% {
         top: 1000px;
         left: 1000px;
-        background-color: red;
+        
         
       }
+    }
+
+    @keyframes pinky {
+     
+      100% {
+        top: 1000px;
+        left: 500px;
+        
+    }
+    
     }
   </style>
 </head>
 <body>
   <div class="blinky">
+    <div class="eyes">
+      <div class="left-eye">
+        <div class="pupil"></div>
+      </div>
+      <div class="right-eye">
+        <div class="pupil"></div>
+      </div>
+    </div>
+  </div>
+  <div class="pinky">
     <div class="eyes">
       <div class="left-eye">
         <div class="pupil"></div>
