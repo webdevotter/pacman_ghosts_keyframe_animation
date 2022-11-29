@@ -7,7 +7,7 @@
   <title>Keyframes 2</title>
   <style>
     body {
-      background-color: #444;
+      background-color: #000;
     }
     .blinky{
       background-color: red;
@@ -28,6 +28,26 @@
       top: -500px;
       left: 500px;
       animation: pinky 5s forwards 2s ease;
+    }
+    .inky{
+      background-color: blue;
+      width: 200px;
+      height: 200px;
+      border-radius: 50% 50% 0 0;
+      position: relative;
+      top: 250px;
+      left: 2000px;
+      animation: inky 5s forwards 2s ease;
+    }
+    .clyde{
+      background-color: orange;
+      width: 200px;
+      height: 200px;
+      border-radius: 50% 50% 0 0;
+      position: relative;
+      top: 1000px;
+      left: 800px;
+      animation: clyde 5s forwards 2s ease;
     }
     
     .eyes {
@@ -68,38 +88,43 @@
     @keyframes blinky {
       25% {
         top: 0;
-        left: 500px;
-        
-        
+        left: 500px;              
       }
       50% {
         top: 500px;
-        left: 500px;
-        
-        
+        left: 500px;       
       }
       75% {
         top: 500px;
-        left: 1000px;
-        
-        
+        left: 1000px;        
       }
       100% {
         top: 1000px;
-        left: 1000px;
-        
-        
+        left: 1000px;        
       }
     }
 
-    @keyframes pinky {
-     
-      100% {
-        top: 1000px;
-        left: 500px;
-        
+      @keyframes pinky {     
+        100% {
+          top: 1000px;
+          left: 500px;       
+      }    
     }
+
+    @keyframes inky {
+      100% {
+        top: 250px;
+        left: -500px;              
+      }
+            
+      }
     
+
+    @keyframes clyde {
+      100% {
+          top: -1000px;
+          left: 800px;       
+      }  
     }
   </style>
 </head>
@@ -115,6 +140,26 @@
     </div>
   </div>
   <div class="pinky">
+    <div class="eyes">
+      <div class="left-eye">
+        <div class="pupil"></div>
+      </div>
+      <div class="right-eye">
+        <div class="pupil"></div>
+      </div>
+    </div>
+  </div>
+  <div class="inky">
+    <div class="eyes">
+      <div class="left-eye">
+        <div class="pupil"></div>
+      </div>
+      <div class="right-eye">
+        <div class="pupil"></div>
+      </div>
+    </div>
+  </div>
+  <div class="clyde">
     <div class="eyes">
       <div class="left-eye">
         <div class="pupil"></div>
