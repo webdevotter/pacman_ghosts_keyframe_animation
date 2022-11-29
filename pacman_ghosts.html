@@ -8,7 +8,25 @@
   <style>
     body {
       background-color: #000;
+      overflow: hidden;
+      
     }
+    .dot-container-1 {
+      
+      width: 100%;
+      display: flex;
+      
+    }
+    .dot {
+      
+      margin: 25px;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2)
+    }
+
+    
     .blinky{
       background-color: red;
       width: 200px;
@@ -17,7 +35,7 @@
       position: relative;
       top: 0;
       left: -500px;
-      animation: blinky 5s forwards 2s ease-in-out;
+      animation: blinky 10s forwards 2s ease-in-out;
     }
     .pinky{
       background-color: pink;
@@ -25,9 +43,9 @@
       height: 200px;
       border-radius: 50% 50% 0 0;
       position: relative;
-      top: -500px;
+      top: -1500px;
       left: 500px;
-      animation: pinky 5s forwards 2s ease;
+      animation: pinky 10s forwards 2s ease;
     }
     .inky{
       background-color: blue;
@@ -35,9 +53,9 @@
       height: 200px;
       border-radius: 50% 50% 0 0;
       position: relative;
-      top: 250px;
-      left: 2000px;
-      animation: inky 5s forwards 2s ease;
+      top: 100px;
+      left: -250px;
+      animation: inky 10s forwards 2s ease;
     }
     .clyde{
       background-color: orange;
@@ -45,9 +63,9 @@
       height: 200px;
       border-radius: 50% 50% 0 0;
       position: relative;
-      top: 1000px;
-      left: 800px;
-      animation: clyde 5s forwards 2s ease;
+      top: 0px;
+      left: 2000px;
+      animation: clyde 10s forwards 2s ease;
     }
     
     .eyes {
@@ -99,22 +117,22 @@
         left: 1000px;        
       }
       100% {
-        top: 1000px;
-        left: 1000px;        
+        top: 1500px;
+        left: 1200px;        
       }
     }
 
       @keyframes pinky {     
         100% {
-          top: 1000px;
+          top: 1500px;
           left: 500px;       
       }    
     }
 
     @keyframes inky {
       100% {
-        top: 250px;
-        left: -500px;              
+        top: 100px;
+        left: 2000px;              
       }
             
       }
@@ -122,9 +140,9 @@
 
     @keyframes clyde {
       100% {
-          top: -1000px;
-          left: 800px;       
-      }  
+        top: 25px;
+        left: -2000px;              
+      }
     }
   </style>
 </head>
